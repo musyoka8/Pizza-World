@@ -15,4 +15,11 @@ $(document).ready(function (){
     order.prototype.allInformation = function(){
         return this.sizeOfPizza + "," + this.quantityOfPizza +"," +this.crustOfPizza +"," + this.toppingsOfPizza + "," + this.deliveryOfPizza + ",";
     }
+    $(document).ready(function(){
+        $("form#odd").submit(function (event){
+            event.preventDeafult();
+            var newOrder;
+            
+        }
+    })
 })
