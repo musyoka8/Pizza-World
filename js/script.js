@@ -5,7 +5,7 @@ $(document).ready(function (){
         this.city = City;
         this.tel = Tel;
     }
-    function order(size,quantity,crust,toppings,delivery){
+    function order(size, Quantity, Crust, Toppings, Delivery){
         this.sizeOfPizza = size;
         this.quantityOfPizza = Quantity;
         this.crustOfPizza = Crust;
@@ -29,7 +29,7 @@ $(document).ready(function (){
             }
             else if ($("#size3").val()) {
                 var inputtedSizeofpizza = $("#Size2").val() + "" + "price=2000frw";
-                console.log(inputtedSizeofpizza)
+                console.log(inputtedSizeofPizza)
             }
             if ($('#Crust').val()) {
                 var inputtedCrustofpizza = $("#Crust").val() + "" + "price=1000frw";
@@ -55,6 +55,42 @@ $(document).ready(function (){
                 var inputtedQuantityofpizza = $('#quantity2').val();
                 console.log(inputtedQuantityOfPizza)
             }
-            var
+            var theChoosenToppings =[];
+
+            $("input[type=checkbox]:checked").each(function(){
+                theChoosenToppings.push($(this).val());
+                console.log(theChoosenToppings);
+            });
+            var additionToppings = 0;
+            function Toppings(theChoosenToppings) {
+                for (var a = 0; a < theChoosenToppings.length; a++) {
+                    if (theChoosenToppings[a] === "Cheese") {
+                        additionToppings += 500
+                        console.log(additionToppings)
+                    }
+                    else if (theChoosenToppings[a] === "Tomato") {
+                        additionToppings += 800
+                        console.log(additionToppings)
+                    }
+                    else if (theChoosenToppings[a] === "Arugula") {
+                        additionToppings += 1000
+                        console.log(additionToppings)
+                    }
+                    else if (thechoosenToppings[a] === "Vegeterian") {
+                        additionToppings += 1200
+                        console.log(additionToppings)
+                    }
+                    else if (theChoosenToppings[a] === "Mexican") {
+                        additionToppings += 1500
+                        console.log(additionToppings)
+                    }
+                    else if (theChoosenToppings[a] === "Crackerbread") {
+                        additionToppings += 1800
+                        console.log(additionToppings)
+                    }
+                    console.log(additionToppings)
+                    return additionToppings;
+                }
+            
     })
 })
