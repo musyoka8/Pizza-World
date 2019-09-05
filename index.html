@@ -1,162 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pizza World</title>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="section1">
-            <h1>--Pizza World--</h1>
-            <h2><em>Mouth Watering</em></h2>
-        </div>
-    </div>
-<form id="formid">
-    <div class="container"></div>
-        <h1 class="header1">Design your own pizza:</h1>
-        <h3 class="header3">Choose the size:</h3>
-        <div class="row">
-        
-                <div class="section2">
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/small.png" alt="small">
-                            <input type="radio" name="size" value="small" id="small">Small: Ksh 800
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/medium.png" alt="medium">
-                            <input type="radio" name="size" value="medium" id="medium">Medium: Ksh 1000
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/large.png" alt="large">
-                            <input type="radio" name="size" value="large" id="large">Large: Ksh 1300
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
-    </div>
-    <div class="container">
-        <h4 class="header3">Choose the crust:</h4>
-        <div class="row">
-         
-                <div class="section3">
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/thin.png" alt="thin">
-                            <input type="radio" name="crust" value="thin" id="thin">Thin: Ksh 300
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/thick.png" alt="thick">
-                            <input type="radio" name="crust" value="thick" id="thick">Thick: Ksh 500
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/deep.png" alt="deep">
-                            <input type="radio" name="crust" value="deep" id="deep">Deep: Ksh 500
-                        </div>
-                    </div>
-                </div>
-          
-        </div>
-        <div class="row">
-           
-                <div class="section3">
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/stuffed.png" alt="stuffed">
-                            <input type="radio" name="crust" value="stuffed" id="stuffed">stuffed: Ksh 400
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-4">
-                            <img src="css/images/cheese_filled.png" alt="cheese">
-                            <input type="radio" name="crust" value="cheese" id="cheese">Cheese-filled: Ksh 400
-                        </div>
-                    </div>
-                </div>
-           
-        </div>
-    </div>
-    <div class="container">
-        <h4 class="header3">Choose your toppings:</h4>
-        <div class="row">
-          
-                <div class="section4">
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <input type="radio" name="toppings" id="chicken">Chicken
-                            <input type="radio" name="toppings" id="pepperoni">Pepperoni
-                            <input type="radio" name="toppings" id="cheese">Cheese
-                            <input type="radio" name="toppings" id="olive">Olive
-                        </div>
-                    </div>
-                </div>
-        
-        </div>
-    </div>
-    <div class="container">
-      
-            <div class="row">
-                <div class="section5">
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <label>Input Your name:</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <label>Input your address</label>
-                            <input type="text" name="address" id="address" placeholder="Eg. Street name">
-                            <input type="text" name="city" id="city" placeholder="Eg. Nairobi">
-                        </div>
-                    </div>      
-                </div>
-            <div class="row">
-                <button type="submit" class="btn-primary" id="my_submit">Checkout</button>
-            </div>
-  
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-            <div id="show-bill">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <p><strong>You final bill is...</strong></p>
-                        <p>Size: <span id="displaySize"></span></p>
-                        <p>Crust: <span id="displayCrust"></span></p>
-                        <p>Toppings: <span id="displayToppings"></span></p>
-                    </div>
-                    <div class="adress2">
-                        <p>Address: <span id="displayName"></span></p>
-                        <p>Total cost: <span id="displayTotalCost"></span></p>\
 
-                    </div>
-                    <div class="delivery"></div>
-                </div>
-                <div class="panel-footer">Thank You for visiting US !!!</div>
+<head>
+    <meta charset="utf-8">
+    <meta nam e="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pizza Espresso</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div class="container-fluid">
+        <div class="section1 text-center">
+            <br><br>
+            <h1>Welcome to Pizza World</h1>
+            <h4>Where taste meets quality</h4>
+        </div><br><br>
+        <div class="section2">
+            <div class="text-center">
+                <img src="img/back.jpg" alt="" class="img-fluid">
+                <h1>ABOUT US</h1>
+                <p>Pizza World Offers a very unique atmosphere for
+                    customers in addition to home delivery services for all orders
+                    and we know that pizza is a family meal popular around
+                    the world that resulted in a large number of chains of pizza
+                    restaurants but a few of them is best like pizza World.</p>
             </div>
+        </div><br><br><br>
+        <div class="section3">
+
+            <h2 class="text-center mb-4" id="menu"><strong>Our Menu</strong></h2>
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <!--Card-->
+                    <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="img/pepperoni.png" class="card-img-top" alt="">
+                            <!-- <a href="#"> -->
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">PEPPERONI</h4>
+                            <!--Text-->
+                            <p class="card-text">Loaded with 50% more tasty pepperoni & mozzarella cheese.</p>
+                            <a class="btn blue-gradient btn-block clickable" href="#myform">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <!--Card-->
+                    <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="img/bacon.png" class="card-img-top" alt="">
+                            <!-- <a href="#"> -->
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">BACON</h4>
+                            <!--Text-->
+                            <p class="card-text">Tender steak, crispy rasher bacon and red onion topped with BBQ sauce..
+                            </p>
+                            <a class="btn blue-gradient btn-block" href="#myform">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <!--Card-->
+                    <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="img/mushroom3.png" class="card-img-top" alt="">
+                            <!-- <a href="#"> -->
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">MUSHROOM</h4>
+                            <!--Text-->
+                            <p class="card-text">Capsicum, mushroom, baby spinach, red onion, tomato, oregano &
+                                mozzarella on a tomato & garlic sauce base</p>
+                            <a class="btn blue-gradient btn-block" href="#myform">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <div row>
+                <div class="col-sm-8">
+
+                    <!-- ORDER form -->
+
+                    <div id="myform" class="">
+                        <form method="post" class="border border-light p-5 form-group" name="orderform" id="orderform">
+                            <h5 class="h4 mb-4 text-center underline">
+                                <strong>PIZZA WORLD ORDER FORM</strong>
+                            </h5>
+                            <label for="fname"><strong>FIRST NAME:</strong></label>
+                            <input type="text" name="fname" class="form-control" placeholder="first name"><br>
+
+                            <label for="lname"><strong>LAST NAME:</strong></label>
+                            <input type="text" name="lname" class="form-control" placeholder="last name"><br>
+
+                            <label for="formEmail"><strong>E-MAIL:</strong></label>
+                            <input type="email" id="formEmail" class="form-control" placeholder="Your email"> <br>
+
+
+                            <label for="phone"><strong>PHONE:</strong></label>
+                            <input type="tel" id="phone" class="form-control" placeholder="0700000100"> <br>
+
+                            <div>
+                                <label for="sizeselect"><strong>PIZZA SIZE:</strong></label>
+                                <select class="mdb-select md-form mb-4 initialized form-control" id="sizeselect"
+                                    name="sizes">
+                                    <option value="" disabled selected>CHOOSE PIZZA SIZE</option>
+                                    <option value="200" name="small">SMALL - 200 KES</option>
+                                    <option value="400" name="medium">MEDIUM - 400 KES</option>
+                                    <option value="800" name="large">LARGE - 800 KES</option>
+                                </select>
+
+                            </div>
+
+                            <div>
+                                <label for="sizeselect"><strong>PIZZA CRUST:</strong></label>
+                                <select class="mdb-select md-form mb-4 initialized form-control" id="crustselect"
+                                    name="crust">
+                                    <option value="" disabled selected>CHOOSE PIZZA CRUST</option>
+                                    <option value="100">Crispy - 100 KES</option>
+                                    <option value="150">Stuffed - 150 KES</option>
+                                    <option value="200">Glutten-free - 200 KES</option>
+                                </select>
+                            </div>
+
+                            <hr class="new1">
+                            <p><strong>PIZZA TOPPINGS:</strong></p>
+                            <div class="mb-4">
+                                <div class="form-check form-control">
+
+                                    <input type="checkbox" class="form-check-input" id="pepperoni" name="toppings"
+                                        value="250" onchange="toppingsPrice()" />
+                                    <label class="form-check-label" for="pepperoni">
+                                        PEPPERONI - 250 KES</label>
+                                </div>
+                                <div class="form-check form-control">
+                                    <input type="checkbox" class="form-check-input" id="bacon" name="toppings"
+                                        value="300" onchange="toppingsPrice()" />
+                                    <label class="form-check-label" for="bacon">
+                                        BACON - 300 KES</label>
+                                </div>
+                                <div class="form-check form-control">
+                                    <input type="checkbox" class="form-check-input" id="mushroom" name="toppings"
+                                        value="350" onchange="toppingsPrice()" />
+                                    <label class="form-check-label" for="mushroom">
+                                        MUSHROOM - 350 KES</label>
+                                </div>
+                                <p><strong>Total:</strong> <input type="number" size="2" name="total" value=""
+                                        class="form-control" id="total" /></p>
+                            </div>
+                            <div>
+                                <label for="quantity"><strong>QUANTITY:</strong></label>
+                                <input type="number" id="quantity" min="1" class="form-control mb-4"
+                                    placeholder="enter quantity of Pizza" name="quantity">
+                            </div>
+
+                            <hr class="new1">
+                            <!-- <div class="delivery">
+                        <button type="button" id="button1" class="btn btn-primary">Delivery</button>
+                    </div> -->
+
+
+
+
+                            <label for="delivery"> <strong>DO YOU NEED DELIVERY?</strong></label> <br>
+                            <input type="radio" id="delivery" value="100" class="mb-4 form" name="delivery" checked> Yes
+                            (100
+                            KES)<br>
+                            <input type="radio" id="delivery" value="0" name="delivery" class="mb-4"> No <br>
+                            <div class="deladdress mb-4">
+                                <p>Your order will be delivered to your location.</p>
+                                <label for="address"><strong>DELIVERY ADDRESS: </strong></label>
+                                <textarea class="form-control" id="address" placeholder=""></textarea>
+                            </div>
+
+
+                            <div class="">
+                                <label for="comment"><strong>COMMENT</strong></label>
+                                <textarea type="text" id="comment" class="form-control" rows="1"
+                                    placeholder="extra order comment"></textarea>
+
+                            </div>
+
+                            <button class="btn-lg btn-outline-danger btn-rounded btn-block z-depth-0 my-4 waves-effect"
+                                type="button" onclick="return totalprice()">CHECK_OUT</button>
+                            <!-- <button type="submit"
+                        class="btn-lg btn-outline-danger btn-rounded btn-block z-depth-0 my-4 waves-effect btn cancel"
+                        onclick="closeForm()">Checkout</button> -->
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="underline" id="summary">ORDER SUMMARY</h3> <br>
+                    <h5 id="custname"></h5>
+                    <h5 id="output"></h5>
+                    <h5 id="sizeof"></h5>
+                    <h5 id="crustType"></h5>
+                    <h5 id="toppingsType"></h5>
+                </div>
             </div>
         </div>
     </div>
-</form>
-    <footer>
-        Brancox Studios 2019
-    </footer>
+
+    </div>
+
+    <!-- END ORDER FORM -->
+
+    </div>
+    <div class="section4 container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h1>CONTACT US</h1>
+                    <h2>Pizza World Kenya</h2>
+                    <h3>Call us +254719609695</h3>
+                </div>
+                <form>
+                    Your Name(required)<br>
+                    <input type="text" class="form-control" id="name" placeholder="Your name.."><br><br>
+                    Your Email(required)<br>
+                    <input type="text" class="form-control" id="email" placeholder="Your email.."><br><br>
+                    subject<br>
+                    <input type="text" class="form-control" id="subject" placeholder="subject.."><br><br>
+                    Your message<br>
+                    <textarea class="form-control" name="message" id="message" rows="5"></textarea><br>
+                    <button type="button" id="button2" class="btn btn-primary">submit</button>
+                </form><br><br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+    </div>
+
+    </div>
+    <!-- Start your project here
+ <footer class="page-footer font-small blue-gradient pt-4 mt-4">
+     Copyright -->
+    <!-- <div class="footer-copyright text-center ">© 2019 Copyright.
+            <a href=""> PIZZA EXPRESSO!</a>
+        </div> -->
+    <!-- Copyright -->
+    <!-- </footer> -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
