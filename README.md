@@ -2,7 +2,7 @@
 #### This is a website for shopping pizzas.
 #### By **Wilfred Musyoka**
 ## Description
-### PIZZAS PLACES
+### PIZZAS World
 Pizza Place website is a web application tha allows you to make a pizza you want by choosing Topping,crust,size and the quantity you want
 ## Setup/Installation Requirements
 * install code editor(ex.vs code) into your your machine

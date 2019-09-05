@@ -1,247 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title> Nagil Pizza World </title>
+    <script src="js/scripts.js"></script>
+    <title>Pizza World</title>
 </head>
 <body>
-
-    <div>
-        <p class="ip">
-            Nagil Pizza World Place.
-        </p>
+    <div class="container-fluid">
+        <div class="section1">
+            <h1>--Pizza World--</h1>
+            <h2><em>Mouth Watering</em></h2>
+        </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <p class="K"> Toppings</p>
-            <p> Pepperoni </p>
-            <p> <img src="images/Pepperoni.jpg"></p>
-            <p> Sausages </p>
-            <p><img src="images/sausages.jpg"></p>
-            <p> Seafood </p>
-            <p><img src="images/Seafood.jpeg"></p>
-            <p> Crackerbread </p>
-            <p><img src="images/Crackerbread.jpeg"></p>
-            <p> Bacon </p>
-            <p><img src="images/Bacon.jpeg"></p>
-            <p> Sauerkraut </p>
-            <p><img src="images/Sauerkraut.jpeg"></p>
-            <p> Pineapple </p>
-            <p><img src="images/Pineapple.jpeg"></p>
+<form id="formid">
+    <div class="container"></div>
+        <h1 class="header1">Design your own pizza:</h1>
+        <h3 class="header3">Choose the size:</h3>
+        <div class="row">
+        
+                <div class="section2">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/small.png" alt="small">
+                            <input type="radio" name="size" value="small" id="small">Small: Ksh 800
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/medium.png" alt="medium">
+                            <input type="radio" name="size" value="medium" id="medium">Medium: Ksh 1000
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/large.png" alt="large">
+                            <input type="radio" name="size" value="large" id="large">Large: Ksh 1300
+                        </div>
+                    </div>
+                </div>
+            
         </div>
-        <div class="col">
-            <div class="one">
-                <h1> PIZZA'S</h1>
-                <p id="hide"><strong>Please choose the type of Toppings you want by clicking on <i>SELECT</i>
-                button and choose other properties from the options below</strong></p>
-            <div id="load">
-                <div id="two1">
-                    <P class="coro"> Cheese </P>
-                    <input type="checkbox" value="Cheese">Cheese
-                    <input type="checkbox" value="Tomato">Tomato
-                    <input type="checkbox" value="Aragula">Aragula
-                    <input type="checkbox" value="Vegeterian">Vegeterian
-                    <input type="checkbox" value="Mexican">Mexican
-                    <input type="checkbox" value="Crackerbread">Crackerbread
-                </div>
-                <div id="two2">
-                    <p class="coro"> Tomato </p>
-                    <input type="checkbox" value="Cheese">Cheese
-                    <input type="checkbox" value="Tomato">Tomato
-                    <input type="checkbox" value="Aragula">Aragula
-                    <input type="checkbox" value="Vegeterian">Vegeterian
-                    <input type="checkbox" value="Mexican">Mexican
-                    <input type="checkbox" value="Crackerbread">Crackerbread
-                </div>
-                <div id="two3">
-                    <p class="coro"> Aragula </p>
-                    <input type="checkbox" value="Cheese">Cheese
-                    <input type="checkbox" value="Tomato">Tomato
-                    <input type="checkbox" value="Aragula">Aragula
-                    <input type="checkbox" value="Vegeterian">Vegeterian
-                    <input type="checkbox" value="Mexican">Mexican
-                    <input type="checkbox" value="Crackerbread">Crackerbread
-                </div>
-                <div id="two4">
-                    <p class="coro"> Vegeterian </p>
-                    <input type="checkbox" value="Cheese">Cheese
-                    <input type="checkbox" value="Tomato">Tomato
-                    <input type="checkbox" value="Aragula">Aragula
-                    <input type="checkbox" value="Vegeterian">Vegeterian
-                    <input type="checkbox" value="Mexican">Mexican
-                    <input type="checkbox" value="Crackerbread">Crackerbread
-                </div>
-                <div id="two5">
-                    <p class="coro"> Mexican </p>
-                    <input type="checkbox" value="Cheese">Cheese
-                    <input type="checkbox" value="Tomato">Tomato
-                    <input type="checkbox" value="Aragula">Aragula
-                    <input type="checkbox" value="Vegeterian">Vegeterian
-                    <input type="checkbox" value="Mexican">Mexican
-                    <input type="checkbox" value="Crackerbread">Crackerbread
-                </div>
-                <div id="two6">
-                    <p class="coro"> Crackerbread </p>
-                    <input type="checkbox" value="Cheese">Cheese
-                    <input type="checkbox" value="Tomato">Tomato
-                    <input type="checkbox" value="Aragula">Aragula
-                    <input type="checkbox" value="Vegeterian">Vegeterian
-                    <input type="checkbox" value="Mexican">Mexican
-                    <input type="checkbox" value="Crackerbread">Crackerbread
-                </div>
-            </div>
-            <form id="odd">
-                <p class="mn"> Size:&nbsp
-                    <select id="Size" class="Size">
-                        <option value="m" disabled selected> choose </option>
-                        <option value="Small"> Small </option>
-                        <option value="Medium"> Medium </option>
-                        <option value="Large"> Large </option>
-                    </select>
-                    &nbsp Quantity;& nbsp
-                    <input type="number" id="quantity" class="quantite" min="1" placeholder="">
-                    Crust &nbsp
-                    <select id="Crust">
-                        <option value="m" disabled selected> choose </option>
-                        <option value="Crispy"> Crispy </option>
-                        <option value="Stuffed"> Stuffed </option>
-                        <option value="Gluten-free"> Gluten-free</option>
-                    </select>
-                </p>
-                <p id="hide2">
-                    &nbsp Size: &nbsp
-                    <select class="Size" id="Size1">
-                        <option value="m" disabled selected> choose </option>
-                        <option value="Small"> Small </option>
-                        <option value="Medium"> Medium </option>
-                        <option value="Large"> Large </option>
-                    </select>
-                    &nbsp Quantity;& nbsp
-                    <input type="number" id="quantity1" class="quantite" min="1" placeholder="">
-                    Crust &nbsp
-                    <select id="Crust">
-                        <option value="m" disabled selected> choose </option>
-                        <option value="Crispy"> Crispy </option>
-                        <option value="Stuffed"> Stuffed </option>
-                        <option value="Gluten-free"> Gluten-free</option>
-                    </select></br><br>
-                </p>
-                <p id="hide3">
-                    &nbsp Size:&nbsp
-                    <select class="Size" id="Size2">
-                            <option value="m" disabled selected> choose </option>
-                            <option value="Small"> Small </option>
-                            <option value="Medium"> Medium </option>
-                            <option value="Large"> Large </option>
-                        </select>
-                        &nbsp Quantity;& nbsp
-                        <input type="number" id="quantity2" class="quantite" min="1" placeholder="">
-                        Crust &nbsp
-                        <select id="Crust2">
-                            <option value="m" disabled selected> choose </option>
-                            <option value="Crispy"> Crispy </option>
-                            <option value="Stuffed"> Stuffed </option>
-                            <option value="Gluten-free"> Gluten-free</option>
-                        </select></br><br>
-                </p>
-                <button id="an"> More than one Pizza Size </button>
-                <div id="choose">
-                    Do you want it delivered??
-                    <select id="Delivery">
-                    <option value="yes" disabled selected> choose </option>
-                    <option value="yes"> YES </option>
-                    <option value="no"> NO </option>
-                    </select>
-                </div>    
-            </form>
-            </div>
-            <button id="Bk"> Back</button>
-            <button id="ask"> Delivering</button>
-            <h3>AVAILABLE TOPPINGS</h3>
-            <a href="#hide">
-                <button class="nn" id="nn"> SELECT</button>
-                <p>Cheese</p>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <p> <img src="images/cheeze.jpg" class="mm"></p>
-                <p> Tomato </p>
-                <button class="nn" id="nn1"> SELECT</button>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <img src="images/tomato.jpeg" class="mm">
-                <p> Aragula </p>
-                <button class="nn" id="nn2"> SELECT</button>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <img src="images/Arugula.jpeg" class="mm">
-                <p> Vegeterian </p>
-                <button class="nn" id="nn3"> SELECT</button>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <img src="images/vegeteria.jpeg" class="mm">
-                <p> Mexican </p>
-                <button class="nn" id="nn4"> SELECT</button>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <img src="images/mexican.jpeg" class="mm">
-                <p> Mexican </p>
-                <button class="nn" id="nn5"> SELECT</button>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <img src="images/mexican.jpeg" class="mm">
-                <p> Crackerbread </p>
-                <button class="nn" id="nn6"> SELECT</button>
-                <p class="two">Ksh 400&nbsp&nbsp Ksh 600 &nbsp&nbsp Ksh 800</p>
-                <img src="images/Crackerbread.jpeg" class="mm">
-            </a>
-        </div>
-        <div class="col">
-            <div id="address">
-                <h4>CONTACT US:</h4>
-                Names: <input type="text" id="full" placeholder="Full Name"><br>
-                Country: <input type="text" id="Country" placeholder="Country">
-                City: <input type="text" id="city" placeholder="city">
-                Telephone: <input type="text" id="Phone" placeholder="Phone no">
-                <button id="order" type="submit"> SEND </button>
-            </div><br>
-            <button class="view"> VIEW ORDER</button></br></br></br>
-            <div id="for">
-                <table style="width: 100%">
-                    <tr>
-                        <td id="show">
-                            ABOUT PIZZA!
-                            <ul id="viewall">
-                                <li>
-                                    <p></p>
-                                </li>
-                            </ul>
-                        </td>
-                    <td>
-                        About Price!
-                        <ul id="price">
-                            <li>
-                                <p></p>
-                            </li>
-                        </ul>
-                    </td>
-                    </tr>
-                </table>
-            </div>
-            <h5>Pizza Crusters</h5>
-            <p>Cruster1</p>
-            <img src="images/crust1.jpeg">
-            <p>Cruster2</p>
-            <img src="images/crust2.jpeg">
-            <p>Cruster3</p>
-            <img src="images/crust3.jpeg">
-            <p>Cruster4</p>
-            <img src="images/crust4.jpg">
-            <p>Cruster5</p>
-            <img src="images/crust5.jpeg">
-            <p>Cruster6</p>
-            <img src="images/crust6.jpeg">
-        </div>
-
     </div>
-    
+    <div class="container">
+        <h4 class="header3">Choose the crust:</h4>
+        <div class="row">
+         
+                <div class="section3">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/thin.png" alt="thin">
+                            <input type="radio" name="crust" value="thin" id="thin">Thin: Ksh 300
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/thick.png" alt="thick">
+                            <input type="radio" name="crust" value="thick" id="thick">Thick: Ksh 500
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/deep.png" alt="deep">
+                            <input type="radio" name="crust" value="deep" id="deep">Deep: Ksh 500
+                        </div>
+                    </div>
+                </div>
+          
+        </div>
+        <div class="row">
+           
+                <div class="section3">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/stuffed.png" alt="stuffed">
+                            <input type="radio" name="crust" value="stuffed" id="stuffed">stuffed: Ksh 400
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <img src="css/images/cheese_filled.png" alt="cheese">
+                            <input type="radio" name="crust" value="cheese" id="cheese">Cheese-filled: Ksh 400
+                        </div>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="header3">Choose your toppings:</h4>
+        <div class="row">
+          
+                <div class="section4">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="radio" name="toppings" id="chicken">Chicken
+                            <input type="radio" name="toppings" id="pepperoni">Pepperoni
+                            <input type="radio" name="toppings" id="cheese">Cheese
+                            <input type="radio" name="toppings" id="olive">Olive
+                        </div>
+                    </div>
+                </div>
+        
+        </div>
+    </div>
+    <div class="container">
+      
+            <div class="row">
+                <div class="section5">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Input Your name:</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Input your address</label>
+                            <input type="text" name="address" id="address" placeholder="Eg. Street name">
+                            <input type="text" name="city" id="city" placeholder="Eg. Nairobi">
+                        </div>
+                    </div>      
+                </div>
+            <div class="row">
+                <button type="submit" class="btn-primary" id="my_submit">Checkout</button>
+            </div>
+  
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <div id="show-bill">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p><strong>You final bill is...</strong></p>
+                        <p>Size: <span id="displaySize"></span></p>
+                        <p>Crust: <span id="displayCrust"></span></p>
+                        <p>Toppings: <span id="displayToppings"></span></p>
+                    </div>
+                    <div class="adress2">
+                        <p>Address: <span id="displayName"></span></p>
+                        <p>Total cost: <span id="displayTotalCost"></span></p>\
+
+                    </div>
+                    <div class="delivery"></div>
+                </div>
+                <div class="panel-footer">Thank You for visiting US !!!</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <footer>
+        Brancox Studios 2019
+    </footer>
 </body>
 </html>
